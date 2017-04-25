@@ -1,0 +1,48 @@
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o parseabc.o parseabc.c
+parseabc.c: In function ‘isnumberp’:
+parseabc.c:342:30: warning: comparison between pointer and integer [enabled by default]
+       if (( *c >= 0) &&  (*c <= 9))
+                              ^
+parseabc.c: In function ‘parse_precomment’:
+parseabc.c:1771:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘char **’ [-Wformat=]
+   success = sscanf (s, "%%abc-version %s", &abcversion); /* [SS] 2014-08-11 */
+   ^
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o store.o store.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o genmidi.o genmidi.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o midifile.o midifile.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o queues.o queues.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o parser2.o parser2.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o stresspat.o stresspat.c
+stresspat.c: In function ‘read_custom_stress_file’:
+stresspat.c:518:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘char (*)[32]’ [-Wformat=]
+     j = fscanf (inhandle, "%s", &name);
+     ^
+stresspat.c:521:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘char (*)[6]’ [-Wformat=]
+     j = fscanf (inhandle, "%s", &meter);
+     ^
+stresspat.c:564:11: warning: ignoring return value of ‘fgets’, declared with attribute warn_unused_result [-Wunused-result]
+     fgets (str, 3, inhandle);
+           ^
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -o abc2midi parseabc.o store.o genmidi.o midifile.o queues.o parser2.o stresspat.o -lm -lm
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o midi2abc.o midi2abc.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -o midi2abc midifile.o midi2abc.o  -lm
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o toabc.o toabc.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -o abc2abc parseabc.o toabc.o -lm
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o mftext.o mftext.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o crack.o crack.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -o mftext midifile.o mftext.o crack.o -lm
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o yapstree.o yapstree.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o drawtune.o drawtune.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o debug.o debug.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o pslib.o pslib.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o position.o position.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -o yaps parseabc.o yapstree.o drawtune.o debug.o pslib.o position.o parser2.o -lm
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o midicopy.o midicopy.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -o midicopy midicopy.o -lm
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o abcmatch.o abcmatch.c
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -DHAVE_CONFIG_H  -I.   -c -o matchsup.o matchsup.c
+matchsup.c: In function ‘dumpfeat’:
+matchsup.c:2012:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+   else printf("%d %s   %d %d %d %d \n",i,featname[j],pitch[i],num[i],denom[i]);
+   ^
+/usr/bin/gcc -DANSILIBS -g3 -gdwarf-2 -O2   -o abcmatch abcmatch.o matchsup.o parseabc.o -lm

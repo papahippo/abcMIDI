@@ -1,0 +1,675 @@
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	parseabc.o
+	parseabc.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	store.o
+	store.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	genmidi.o
+	genmidi.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	midifile.o
+	midifile.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	queues.o
+	queues.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	parser2.o
+	parser2.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	stresspat.o
+	stresspat.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-o
+	abc2midi
+	parseabc.o
+	store.o
+	genmidi.o
+	midifile.o
+	queues.o
+	parser2.o
+	stresspat.o
+	-lm
+	-lm
+
+called: /usr/bin/ld
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/ld
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_i386
+	--hash-style=gnu
+	--as-needed
+	-dynamic-linker
+	/lib/ld-linux.so.2
+	-z
+	relro
+	-o
+	abc2midi
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+	-L/usr/lib/gcc/i686-linux-gnu/4.8
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib
+	-L/lib/i386-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/i386-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../..
+	parseabc.o
+	store.o
+	genmidi.o
+	midifile.o
+	queues.o
+	parser2.o
+	stresspat.o
+	-lm
+	-lm
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	-lc
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	midi2abc.o
+	midi2abc.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-o
+	midi2abc
+	midifile.o
+	midi2abc.o
+	-lm
+
+called: /usr/bin/ld
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/ld
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_i386
+	--hash-style=gnu
+	--as-needed
+	-dynamic-linker
+	/lib/ld-linux.so.2
+	-z
+	relro
+	-o
+	midi2abc
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+	-L/usr/lib/gcc/i686-linux-gnu/4.8
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib
+	-L/lib/i386-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/i386-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../..
+	midifile.o
+	midi2abc.o
+	-lm
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	-lc
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	toabc.o
+	toabc.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-o
+	abc2abc
+	parseabc.o
+	toabc.o
+	-lm
+
+called: /usr/bin/ld
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/ld
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_i386
+	--hash-style=gnu
+	--as-needed
+	-dynamic-linker
+	/lib/ld-linux.so.2
+	-z
+	relro
+	-o
+	abc2abc
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+	-L/usr/lib/gcc/i686-linux-gnu/4.8
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib
+	-L/lib/i386-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/i386-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../..
+	parseabc.o
+	toabc.o
+	-lm
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	-lc
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	mftext.o
+	mftext.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	crack.o
+	crack.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-o
+	mftext
+	midifile.o
+	mftext.o
+	crack.o
+	-lm
+
+called: /usr/bin/ld
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/ld
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_i386
+	--hash-style=gnu
+	--as-needed
+	-dynamic-linker
+	/lib/ld-linux.so.2
+	-z
+	relro
+	-o
+	mftext
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+	-L/usr/lib/gcc/i686-linux-gnu/4.8
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib
+	-L/lib/i386-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/i386-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../..
+	midifile.o
+	mftext.o
+	crack.o
+	-lm
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	-lc
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	yapstree.o
+	yapstree.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	drawtune.o
+	drawtune.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	debug.o
+	debug.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	pslib.o
+	pslib.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	position.o
+	position.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-o
+	yaps
+	parseabc.o
+	yapstree.o
+	drawtune.o
+	debug.o
+	pslib.o
+	position.o
+	parser2.o
+	-lm
+
+called: /usr/bin/ld
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/ld
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_i386
+	--hash-style=gnu
+	--as-needed
+	-dynamic-linker
+	/lib/ld-linux.so.2
+	-z
+	relro
+	-o
+	yaps
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+	-L/usr/lib/gcc/i686-linux-gnu/4.8
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib
+	-L/lib/i386-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/i386-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../..
+	parseabc.o
+	yapstree.o
+	drawtune.o
+	debug.o
+	pslib.o
+	position.o
+	parser2.o
+	-lm
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	-lc
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	midicopy.o
+	midicopy.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-o
+	midicopy
+	midicopy.o
+	-lm
+
+called: /usr/bin/ld
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/ld
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_i386
+	--hash-style=gnu
+	--as-needed
+	-dynamic-linker
+	/lib/ld-linux.so.2
+	-z
+	relro
+	-o
+	midicopy
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+	-L/usr/lib/gcc/i686-linux-gnu/4.8
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib
+	-L/lib/i386-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/i386-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../..
+	midicopy.o
+	-lm
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	-lc
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	abcmatch.o
+	abcmatch.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-DHAVE_CONFIG_H
+	-I.
+	-c
+	-o
+	matchsup.o
+	matchsup.c
+
+called: /usr/bin/gcc
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/gcc
+	-DANSILIBS
+	-g3
+	-gdwarf-2
+	-O2
+	-o
+	abcmatch
+	abcmatch.o
+	matchsup.o
+	parseabc.o
+	-lm
+
+called: /usr/bin/ld
+	/home/larry/musicprogs/abcMIDI-2017.04.19 /abcmidi
+	/usr/bin/ld
+	--sysroot=/
+	--build-id
+	--eh-frame-hdr
+	-m
+	elf_i386
+	--hash-style=gnu
+	--as-needed
+	-dynamic-linker
+	/lib/ld-linux.so.2
+	-z
+	relro
+	-o
+	abcmatch
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+	-L/usr/lib/gcc/i686-linux-gnu/4.8
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib
+	-L/lib/i386-linux-gnu
+	-L/lib/../lib
+	-L/usr/lib/i386-linux-gnu
+	-L/usr/lib/../lib
+	-L/usr/lib/gcc/i686-linux-gnu/4.8/../../..
+	abcmatch.o
+	matchsup.o
+	parseabc.o
+	-lm
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	-lc
+	-lgcc
+	--as-needed
+	-lgcc_s
+	--no-as-needed
+	/usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+	/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+
