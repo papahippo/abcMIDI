@@ -115,7 +115,7 @@ int microtone;			/* [SS] 2014-01-19 */
 
 extern programname fileprogram;
 int oldchordconvention = 0;
-char * abcversion = "2.0"; /* [SS] 2014-08-11 */
+char abcversion[4] = "2.0"; /* [LM] 2017-05-01 */
 char lastfieldcmd = ' '; /* [SS] 2014-08-15 */
 
 char *mode[10] = { "maj", "min", "m",
@@ -339,7 +339,7 @@ isnumberp (p)
   c = p;
   while (( **c != ' ') && ( **c != TAB) &&  **c != '\0')
     {
-      if (( *c >= 0) &&  (*c <= 9))
+      if (( **c >= '0') &&  (**c <= '9'))
 	*c = *c + 1;
       else
 	return 0;
@@ -1768,7 +1768,7 @@ parse_precomment (s)
   char *p;
   int success;
 
-  success = sscanf (s, "%%abc-version %s", &abcversion); /* [SS] 2014-08-11 */
+  success = sscanf (s, "%%abc-version %3s", abcversion); /* [LM] 2017-05-01 */
   if (*s == '%')
     {
       p = s + 1;
