@@ -495,9 +495,10 @@ void
 read_custom_stress_file (char *filename)
 {
   FILE *inhandle;
-  char name[32];
-  char meter[6];
+  char name[33]; /* LM 2017-05-01 */
+  char meter[7]; /* LM 2017-05-01 */
   char str[4];
+  char *pAny;
   int index;
   int nseg, nval;
   int gain;
@@ -515,10 +516,10 @@ read_custom_stress_file (char *filename)
   {
     if (feof (inhandle))
       break;
-    j = fscanf (inhandle, "%s", &name);
+    j = fscanf (inhandle, "%32s", name); /* LM 2017-05-01 */
     if (j == -1)
       break;
-    j = fscanf (inhandle, "%s", &meter);
+    j = fscanf (inhandle, "%6s", meter); /* LM 2017-05-01 */
     index = stress_locator (&name[0], &meter[0]);
     if (verbose > 1) printf ("%s %s index = %d\n",name,meter,index);
     
@@ -561,6 +562,6 @@ read_custom_stress_file (char *filename)
       stresspat[index].vel[i] = gain;      /* [RZ] 2013-12-25 */
       stresspat[index].expcoef[i] = expand; /* [RZ] 2013-12-25 */
     }
-    fgets (str, 3, inhandle);
+    pAny = fgets (str, 3, inhandle);
   }
 }
